@@ -87,9 +87,9 @@ a:active {
     --HEADER-BGCOLOR: #000;
     --HEADER-COLOR: #FFF;
     --NAV-BGCOLOR: #FFF;
-    --HERO-BGCOLOR: rgba(51,178,51, 0.7);
+    --HERO-BGCOLOR: rgba(51,178,51, 0.85);
     --HERO-COLOR: #FFF;
-
+    
     /* BORDERS */
     --BORDER: 1px solid var(--BORDER-COLOR);
     --BORDER_RADIUS: 15px;
@@ -97,9 +97,28 @@ a:active {
     /* STANDARD PADDINGS */
     --PADDING-TB: 0.25em;
     --PADDING-SIDE: 2.5%;
-
+    
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.6em);
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --BGCOLOR-FADE: gray;
+        --BGCOLOR: #000;
+        --BODY-BGCOLOR: #333;
+        --BORDER-COLOR: whitesmoke;
+        --BUTTON-COLOR: #000;
+        --FONT-COLOR: whitesmoke;
+        --HEADER-BGCOLOR: #222;        
+        --HEADER-COLOR: whitesmoke;
+        --NAV-BGCOLOR: #222;           
+        --HERO-BGCOLOR: #444;          
+        --HERO-COLOR: whitesmoke;     
+        --HIGHLIGHT-COLOR: whitesmoke;
+        --LINK-ACTIVE: rgb(252, 200, 103);
+        --LINK-COLOR: whitesmoke;
+        --LINK-HOVER: orange;
+    }
 }
 
 /* || UTILITY CLASSES */
@@ -115,6 +134,7 @@ a:active {
 .center {
     text-align: center;
 }
+
 
 /* || HEADERS */
 
@@ -248,8 +268,10 @@ header {
     width: 100%;
 } 
 .contact__button {
-    background-color: var(--HIGHLIGHT-COLOR);
-    color: var(--HEADER-COLOR);
+    /* background-color: var(--HIGHLIGHT-COLOR); */
+    background-color: var(--HERO-BGCOLOR);
+    color: var(--HERO-COLOR);
+    /* color: var(--HEADER-COLOR); */
     padding: 0.5em 1em;
     border-radius: var(--BORDER_RADIUS);
 }

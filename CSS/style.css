@@ -96,3 +96,16 @@ header {
     gap: 1rem;
 }
 
+
+/* || FOOTER */
+
+.footer {
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    text-align: center;
+    
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    
+    position: sticky;
+    bottom: 0;
+}

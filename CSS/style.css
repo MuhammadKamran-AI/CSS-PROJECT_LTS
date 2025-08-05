@@ -64,3 +64,35 @@ a:hover, a:focus-visible {
 a:active {
     color: var(--LINK-ACTIVE);
 }
+
+/* || HEADERS */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__h1 {
+    text-align: center;
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+}
+
+.header__nav {
+    background-color: var(--NAV-BGCOLOR);
+    border: var(--BORDER);
+    box-shadow: 0 6px 5px -4px var(--BORDER-COLOR);
+    font-weight: bold;
+}
+
+.header__ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    gap: 1rem;
+}
+
